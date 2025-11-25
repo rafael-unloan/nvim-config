@@ -111,6 +111,18 @@ require("lazy").setup({
   -- Neovim icons: Required for better UI in Neogit and Telescope
   { "nvim-tree/nvim-web-devicons" },
 
+  -- One Dark theme
+  {
+    "navarasu/onedark.nvim",
+    priority = 1000,
+    config = function()
+      require("onedark").setup({
+        style = "dark",
+      })
+      require("onedark").load()
+    end,
+  },
+
   -- Diffview: Recommended for Neogit diffs
   {
     "sindrets/diffview.nvim",
