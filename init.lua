@@ -232,6 +232,7 @@ require("lazy").setup({
 })
 
 -- Basic editor settings
+vim.opt.clipboard = "unnamedplus"
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.expandtab = true
